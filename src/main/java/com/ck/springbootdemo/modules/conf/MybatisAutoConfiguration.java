@@ -91,11 +91,11 @@ public class MybatisAutoConfiguration {
         return factory.getObject();
     }
 
-    @Bean
-    @ConditionalOnMissingBean
-    public SqlSessionTemplate sqlSessionTemplate(SqlSessionFactory sqlSessionFactory) {
-        return new SqlSessionTemplate(sqlSessionFactor);
-    }
+//    @Bean
+//    @ConditionalOnMissingBean
+//    public SqlSessionTemplate sqlSessionTemplate(SqlSessionFactory sqlSessionFactory) {
+//        return new SqlSessionTemplate(sqlSessionFactor);
+//    }
 
     /**
      * 分页插件
